@@ -46,7 +46,7 @@ Solitaire Game Using the italian 40 cards deck
   
   Now, before checking the (8, swords) with the (4 swords), you need to check the card that you
   have just put on top of another one, namely you have to check the (7, cups) with the (7, coins)
-  and since they share the value, you has to put the (4, swords) on top of the (7, coins), obtaining:
+  and since they share the value, you have to put the (4, swords) on top of the (7, coins), obtaining:
   
   > table configuration: (3, swords), (4, swords), (7, cups) (8, swords).
   
