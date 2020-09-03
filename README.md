@@ -1,7 +1,9 @@
 # Solitaire
-Solitaire Game Using the italian 40 cards deck
+ 
+ ###### Same game written in: c++, python and COBOL
 
-* This solitaire is played using the italian 40 cards deck. 
+### Solitaire Game Using the italian 40 cards deck 
+
 * The suites are:
   1) Clubs;
   2) Swords;
@@ -10,9 +12,9 @@ Solitaire Game Using the italian 40 cards deck
 * Rules of the game:
   1) Start with the deck shuffled in a random order.
   2) Put the first card at the top of the deck on the table, face up.
-  3) Put the again the top card of the deck near the other card (on the right for example), face up.
+  3) Put again the top card of the deck near the other card (on the right for example), face up.
   4) Take the top card of the deck and put it on the right of the last card, face up again.
-  5) Now, check the last card and the first you put. If they match in suite or in value, then take the
+  5) Now, check the last card and the first you put down. If they match in suite or in value, then take the
      the second card (the one in-between) and put it on top of the first card.
      
      > --- Example ---
