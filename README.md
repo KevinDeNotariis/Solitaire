@@ -4,7 +4,7 @@
 
 ### Solitaire Game Using the italian 40 cards deck 
 
-* The suites are:
+* The suits are:
   1) Clubs;
   2) Swords;
   3) Cups;
@@ -14,7 +14,7 @@
   2) Put the first card at the top of the deck on the table, face up.
   3) Put again the top card of the deck near the other card (on the right for example), face up.
   4) Take the top card of the deck and put it on the right of the last card, face up again.
-  5) Now, check the last card and the first you put down. If they match in suite or in value, then take the
+  5) Now, check the last card and the first you put down. If they match in suit or in value, then take the
      the second card (the one in-between) and put it on top of the first card.
      
      > --- Example ---
@@ -53,8 +53,8 @@
   > table configuration: (3, swords), (4, swords), (7, cups) (8, swords).
   
   Now, you should check the (4, swords), but there is no card to check it with, so you rewind back, and check
-  (7, cups) with (3 swords) and do nothing since they do not share neither the suite nor the value. After that,
-  you check the (8, swords) with the (4 swords) and since they share the suite, you put the card in-between, namely
+  (7, cups) with (3 swords) and do nothing since they do not share neither the suit nor the value. After that,
+  you check the (8, swords) with the (4 swords) and since they share the suit, you put the card in-between, namely
   the (7, cups) on top of the (4, swords), obtaining:
   
   > table configuration: (3, swords) (7, cups) (8, swords).
