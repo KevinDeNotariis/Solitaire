@@ -6,7 +6,7 @@
        DATA DIVISION.
        LINKAGE SECTION.
            
-           01 L-SUITE-TABLE.
+           01 L-SUIT-TABLE.
                02 L-SUITES PIC A(6) OCCURS 4 TIMES INDEXED BY I.
     
            01 L-DECK.
@@ -17,7 +17,7 @@
             01 L-BOQUETS-DECK.
                02 L-BOQUETS-CARDS OCCURS 40 TIMES INDEXED BY K.
                    03 L-BOQUETS-VALUE PIC 99.
-                   03 L-BOQUETS-SUITE PIC A(6).        
+                   03 L-BOQUETS-SUIT PIC A(6).        
 
            01 L-DUMMY-CARD.
                02 L-DUMMY-VALUE PIC 99.
@@ -36,7 +36,7 @@
             01 L-STAT-TABLE.
                02 L-STAT PIC 9(6) OCCURS 40 TIMES INDEXED BY Z.
 
-       PROCEDURE DIVISION USING L-SUITE-TABLE, L-DECK, L-BOQUETS-DECK,
+       PROCEDURE DIVISION USING L-SUIT-TABLE, L-DECK, L-BOQUETS-DECK,
            L-DUMMY-CARD, L-RANDOM_VALUE_INT, L-PRINT_IND, L-PLAY_IND,
            L-MOVE_IND, L-STAT_BOOL, L-STAT-TABLE.
           
@@ -91,7 +91,7 @@
            END-IF
 
            PERFORM UNTIL K <= 2
-               IF L-BOQUETS-SUITE(K) = L-BOQUETS-SUITE(K - 2) 
+               IF L-BOQUETS-SUIT(K) = L-BOQUETS-SUIT(K - 2) 
                 OR L-BOQUETS-VALUE(K) = L-BOQUETS-VALUE(K - 2) THEN
                    MOVE L-BOQUETS-CARDS(K - 1) TO 
                     L-BOQUETS-CARDS(K - 2)
@@ -113,8 +113,8 @@
 
        PLAY.
            IF L-PLAY_IND > 2 THEN
-               IF L-BOQUETS-SUITE(L-PLAY_IND - 2) = 
-                  L-BOQUETS-SUITE(L-PLAY_IND) OR 
+               IF L-BOQUETS-SUIT(L-PLAY_IND - 2) = 
+                  L-BOQUETS-SUIT(L-PLAY_IND) OR 
                   L-BOQUETS-VALUE(L-PLAY_IND - 2) =
                   L-BOQUETS-VALUE(L-PLAY_IND) THEN
                
@@ -153,7 +153,7 @@
            DISPLAY " ".
 
        PRINT_DECK_LOOP.
-           DISPLAY "(" L-VALUE(L-PRINT_IND) ", " L-SUITE(L-PRINT_IND) 
+           DISPLAY "(" L-VALUE(L-PRINT_IND) ", " L-SUIT(L-PRINT_IND) 
            ")" WITH NO ADVANCING.
            
        *>***************************************************************
